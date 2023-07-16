@@ -1,0 +1,17 @@
+#!/bin/bash
+# module :practise
+#author :ssr
+#date : 16-07-23
+
+
+# ask the user to enter the file name
+read -p "Enter the file name: " filename
+
+# Check if the file exists
+if [ -f "$filename" ]; then
+    # Remove the file
+    rm "$filename"
+    echo "File $filename removed successfully."
+else
+    echo "File not found!"
+fi
