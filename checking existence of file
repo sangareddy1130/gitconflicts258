@@ -1,0 +1,14 @@
+#!/bin/bash
+# for checking file
+#module : practise
+#author:ssr
+#date : 16-07-2023
+# Prompt the user to enter the file name
+read -p "Enter the file name: " filename
+
+# Check if the file exists
+if [ -f "$filename" ]; then
+    echo "File $filename found."
+else
+    echo "File not found!"
+fi
