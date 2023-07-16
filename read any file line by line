@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Prompt the user to enter the file name
+read -p "Enter the file name: " filename
+
+# Check if the file exists
+if [ -f "$filename" ]; then
+    # Read the file line by line
+    while IFS= read -r line; do
+        echo "$line"
+    done < "$filename"
+else
+    echo "File not found!"
+fi
