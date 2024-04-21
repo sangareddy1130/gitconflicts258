@@ -1,1 +1,2 @@
 hello welcome to testing environment
+helps in preditcing the outages of server by using autosacling
